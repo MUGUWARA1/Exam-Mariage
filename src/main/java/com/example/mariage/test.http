@@ -1,0 +1,93 @@
+POST http://localhost:9090/Persone/add
+Content-Type: application/json
+
+{
+  "cin": "J559008",
+  "prenom": "Karim",
+  "nom": "Derouich"
+}
+####
+POST http://localhost:9090/Persone/add
+Content-Type: application/json
+
+{
+  "cin": "J559008",
+  "prenom": "Fatima",
+  "nom": "ger"
+}
+###
+GET http://localhost:9090/Persone/
+Content-Type: application/json
+
+###
+POST http://localhost:9090/Salle/add
+Content-Type: application/json
+
+
+{
+  "nom": "salle1",
+  "adresse": "rajaraja",
+  "ville": "agadir",
+  "capacite": 200
+}
+
+###
+POST http://localhost:9090/Invitee/add
+Content-Type: application/json
+
+{
+  "cin": "J559008",
+  "prenom": "Karim",
+  "nom": "Derouich",
+  "statut": "INVITE_EPOUX"
+
+}
+###
+POST http://localhost:9090/Mariages/add
+Content-Type: application/json
+
+{
+  "date":"2020-09-15",
+  "nombreMaxInviteEpoux": 20,
+  "nombreMinimumTemoin": 30,
+  "capaciteMinimal": 45
+}
+
+###
+GET http://localhost:9090/Mariages/
+Content-Type: application/json
+
+###
+GET http://localhost:9090/Salle/all
+Content-Type: application/json
+
+###
+POST http://localhost:9090/Persone/add
+Content-Type: application/json
+
+{
+  "cin": "J559008",
+  "prenom": "salah",
+  "nom": "omrani",
+  "statut": "INVITE_EPOUX"
+
+}
+
+
+###
+
+
+POST  http://localhost:9090/Mariages/qrinvite/1
+Content-Type:application/json
+
+{
+  "cin": "J559008",
+  "prenom": "salah",
+  "nom": "ooma",
+  "statut": "INVITE_EPOUX"
+
+}
+
+
+
+
